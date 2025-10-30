@@ -1,0 +1,60 @@
+# ShortTermEmail.com Backend Configuration
+# Copy this file to .env and update with your values
+
+# Domain Configuration
+DOMAIN=shorttermemail.com
+PROTOCOL=https
+HOST=0.0.0.0
+
+# Server Configuration
+PORT=3001
+NODE_ENV=production
+
+# Email Configuration
+EMAIL_DOMAIN=shorttermemail.com
+MAX_EMAILS_PER_ADDRESS=50
+EMAIL_EXPIRY_HOURS=24
+MAX_EMAIL_SIZE=1048576
+CLEANUP_INTERVAL=3600000
+
+# Redis Configuration
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=
+REDIS_TTL=86400
+REDIS_KEY_PREFIX=shorttermemail:
+
+# SMTP Configuration
+SMTP_PORT=25
+SMTP_HOST=0.0.0.0
+
+# Rate Limiting Configuration
+RATE_LIMIT_WINDOW_MS=900000
+RATE_LIMIT_MAX_REQUESTS=100
+EMAIL_GEN_WINDOW_MS=60000
+EMAIL_GEN_MAX_REQUESTS=10
+
+# Security Configuration
+API_KEY=your-secure-api-key-here
+SESSION_SECRET=your-super-secure-session-secret
+
+# Monitoring Configuration
+LOG_LEVEL=info
+HEALTH_CHECK_INTERVAL=30000
+
+# Additional Domains (comma separated)
+ADDITIONAL_DOMAINS=mail.shorttermemail.com,inbox.shorttermemail.com
+
+# SSL Configuration (if using SSL)
+SSL_CERT_PATH=/path/to/cert.pem
+SSL_KEY_PATH=/path/to/key.pem
+
+# Database Configuration (if using additional database)
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=shorttermemail
+DB_USER=username
+DB_PASSWORD=password
+
+# External Services
+SENTRY_DSN=your-sentry-dsn-if-using
