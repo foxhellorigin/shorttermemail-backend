@@ -1,0 +1,46 @@
+{
+  "name": "shorttermemail-backend",
+  "version": "1.0.0",
+  "description": "ShortTermEmail.com Backend API - Free Temporary Email Service",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "smtp": "node smtp-server.js",
+    "test": "echo \"No tests specified\" && exit 0",
+    "deploy": "pm2 start ecosystem.config.js --env production"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "redis": "^4.6.7",
+    "cors": "^2.8.5",
+    "express-rate-limit": "^6.8.1",
+    "socket.io": "^4.7.2",
+    "validator": "^13.9.0",
+    "helmet": "^7.0.0",
+    "compression": "^1.7.4",
+    "morgan": "^1.10.0",
+    "smtp-server": "^3.11.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "keywords": [
+    "temporary-email",
+    "disposable-email",
+    "temp-mail",
+    "shorttermemail",
+    "api"
+  ],
+  "author": "ShortTermEmail Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/shorttermemail-backend"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

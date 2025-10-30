@@ -1,0 +1,9 @@
+# DNS Configuration Guide for ShortTermEmail.com
+
+This guide will help you configure DNS records for your ShortTermEmail deployment.
+
+## Required DNS Records
+
+### For Frontend (GitHub Pages)
+
+#### A Records
